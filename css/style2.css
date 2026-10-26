@@ -1,0 +1,1211 @@
+/* General CSS */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+html {
+    display: block;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    color: white;
+    align-items: flex-start;
+    background-color: #303030;
+    margin: 0;
+    line-height: inherit;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    image-rendering: pixelated;
+    --ui-main-lighter: #514d4c;
+    --ui-main-light: #353535;
+    --ui-main: #1e1e1e;
+    --ui-main-dark: #131313;
+    --text-secondary: #cccccc;
+    --ui-select: #008542;
+    --ui-select-secodary: #1c985a;
+    --ui-red: #aa0000;
+    --ui-red-secondary: #ae2525;
+    --ui-contributors: #1c190b;
+    --ui-contributors-secondary: #ae991e;
+    --ui-credits: #0b141c;
+    --ui-credits-secondary: #1e58ae;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p {
+    margin: 0;
+}
+
+hr {
+    border: 0.1vh solid var(--ui-main-light);
+    width: 74vw;
+}
+
+.bolded {
+    font-weight: 800;
+}
+
+.classicbutton {
+    border: 0.1vw solid var(--ui-main-light);
+    padding: 0.3vw 2vw;
+    cursor: pointer;
+    width: max-content;
+    transition: 0.15s;
+}
+
+.classicbutton:hover {
+    border: 0.1vw solid var(--ui-main-lighter);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.classicbutton.redbutton {
+    background-color: var(--ui-red);
+    border: 0.1vw solid transparent;
+}
+
+.classicbutton.redbutton:hover {
+    background-color: var(--ui-red-secondary);
+    border: 0.1vw solid var(--ui-main-lighter);
+}
+
+.classicbutton.greenbutton {
+    background-color: var(--ui-select);
+    border: 0.1vw solid transparent;
+}
+
+.classicbutton.greenbutton:hover {
+    background-color: var(--ui-select-secodary);
+    border: 0.1vw solid var(--ui-main-lighter);
+}
+
+/* Error CSS */
+
+.error {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding: 0.5vw 1vw;
+    margin: 1vw 0.5vw;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 1.5vw;
+    font-style: italic;
+    transition: 0.3s;
+    animation: drop .5s linear forwards;
+    font-size: 1.5vw;
+}
+
+#naerror {
+    color: gold;
+    border: gold solid 0.1vw;
+}
+
+#screenerror {
+    right: 35%;
+    padding: 0.25vw 4vw;
+    color: darkred;
+    font-size: 1vw;
+    border: red solid 0.1vw;
+}
+
+.zoom-out {
+    animation: zoomed 0.2s linear forwards;
+}
+
+@keyframes zoomed {
+    100% {
+        transform: translateY(10px) scale(0);
+        display: none;
+    }
+}
+
+/* Confirmation Menu CSS */
+
+#confirmationmenu {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.confrimationmenuscreen {
+    position: relative;
+    width: 45vw;
+    padding: 2vw 3vw;
+    border-radius: 0.5vw;
+    background-color: var(--ui-main);
+}
+
+.confrimationmenuscreen.deleteinstallation {
+    width: 35vw;
+    text-align: center;
+}
+
+.confrimationmenuscreen.deleteinstallation .warningdesc {
+    font-style: italic;
+}
+
+#confirmationmenu svg {
+    position: absolute;
+    cursor: pointer;
+    top: 1vw;
+    right: 1vw;
+}
+
+.warningtitle {
+    margin-bottom: 1vh;
+    font-size: 1.4vw;
+}
+
+.confirmationbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 3vh;
+}
+
+/* Sidebar CSS */
+
+.sidebar {
+    height: 100vh;
+    width: 16vw;
+    background-color: var(--ui-main);
+}
+
+.sidebarOptions {
+    display: flex;
+    height: 5vw;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5vw;
+    padding-left: 1.5vw;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+    transition: 0.3s;
+}
+
+.sidebarOptions:hover {
+    cursor: pointer;
+    background-color: var(--ui-main-light);
+}
+
+.sidebarOptions.sidebarBottom {
+    position: absolute;
+    font-size: 1.1vw;
+}
+
+.sidebarOptions.selected {
+    font-weight: 700; 
+    border-left: 0.4vw solid var(--ui-select);
+}
+
+#gtabs1 img {width: 3vw;}
+#gtabs2 img, #gtabs3 img, #gtabs4 img {width: 2.5vw;}
+#gtabs5 {bottom: 7.5vw; width: 14.5vw;}
+#gtabs6 {bottom: 2.5vw; width: 14.5vw;}
+#gtabs7 img {width: 2.5vw}
+#gtabs5 img, #gtabs6 img {width: 2vw;}
+
+.eaglercraftText {
+    font-size: 1.1vw;
+}
+
+.launcherVersion {
+    position: absolute;
+    bottom: 0.25vw;
+    left: 1.25vw;
+    right: 0;
+    z-index: 1;
+    font-size: 1.1vw;
+    color: var(--text-secondary);
+    width: fit-content;
+}
+
+/* Header CSS */
+
+.mainPage {
+    width: 84vw;
+    background-color: var(--ui-main);
+}
+
+.gameHeader {padding: 1.8vw 1.8vw 0;}
+.currentGame {font-size: 1.2vw;}
+
+.gameTabs {
+    display: flex;
+    align-items: center;
+}
+
+.headerButtons {
+    padding: 0.6vw 1.1vw;
+    color: var(--text-secondary);
+    font-size: 0.95vw;
+    line-height: 1.7vw;
+    transition: 0.3s;
+}
+
+.headerButtons:hover {
+    cursor: pointer;
+    color: white
+}
+
+.headerButtons.selected {
+    cursor: default;
+    color: white;
+    font-weight: 800;
+    border-bottom: var(--ui-select) solid 0.21vw;
+}
+
+/* Body CSS */
+
+#game-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    width: 84vw;
+    height: 84vh;
+    justify-content: center;
+}
+
+#game-title {
+    width: 40vw;
+    height: 6.5vw;
+    margin-top: 6vw;
+    animation: drop .5s linear forwards;
+}
+
+#gameSelection {
+    position: absolute;
+    bottom: 0;
+    width: 84vw;
+    height: 4.5vw;
+    justify-content: space-around;
+    display: flex;
+    background-color: var(--ui-main);
+}
+
+.dropdownSelector {
+    position: absolute;
+    left: 1vw;
+    display: flex;
+    height: 4.5vw;
+    width: 27vw;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+.dropdownSelector:hover {
+    cursor: pointer;
+    background-color: var(--ui-main-light);
+}
+
+.centeredIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownIcon {
+    color: white;
+    width: 1.75vw;
+}
+
+.playButton {
+    position: absolute;
+    left: 32vw;
+    bottom: 0.5vw;
+    display: flex;
+    align-items: center;
+    width: 21.5vw;
+    height: 5vw;
+    background-image: url(../assets/images/play.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+
+.playButton:hover {
+    cursor: pointer;
+    background-image: url(../assets/images/play-hover.png);
+    transform: scale(1.05);
+}
+
+.username {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3vw;
+    font-size: 1.35vw;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-300px) scaleY(0.9);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: .7;
+    }
+
+    50% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateY(-17px) scaleY(.9);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-22px) scaleY(.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+}
+
+
+
+.logoimgdiv {
+    position: absolute;
+    right: 100px;
+    transform: translateY(300px);
+    font-size: 30px;
+    border: 0.2vw solid var(--ui-main-light);
+    padding: 0.1vw 0.1vw;
+    cursor: pointer;
+}
+
+.logoimg {
+    width: 300px;
+}
+
+/* Mods Menu CSS */
+
+#mods {
+    position: absolute;
+    display: none;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    background-color: var(--ui-main-dark);
+}
+
+.modketplace-title {
+    margin: 4vh 0 1vh;
+    width: 45vw;
+}
+
+.modssubtitle {
+    font-size: 1.3vw;
+}
+
+#modsbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw 1.5vw;
+    padding: 4vh 0 11vh;
+}
+
+.modoption {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 12vw;
+    transition: 0.15s;
+}
+
+.modoption {
+    border: 0.15vw solid var(--ui-red);
+    image-rendering: pixelated;
+}
+
+.modoption.selected {
+    border: 0.15vw solid #00AA00;
+}
+
+.modoption img {
+    background-color: var(--ui-main);
+}
+
+.modoption:hover img {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.moddetails {
+    background-color: var(--ui-main-light);
+    padding: 0.5vw;
+    height: -webkit-fill-available;
+    font-size: 1.1vw;
+}
+
+.modtitle {
+    font-size: 1.2vw;
+}
+
+.modauthor {
+    text-decoration: underline;
+}
+
+/* FAQ Menu CSS */
+
+#faq {
+    position: absolute;
+    display: none;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1.2vw;
+}
+
+.faqtitle {
+    font-size: 2.3vw;
+    padding-top: 3vh;
+}
+
+#faqbox {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 11vw 15vh;
+    width: -webkit-fill-available;
+}
+
+.faqoption {
+    margin-bottom: 3vh;
+}
+
+.faqtext {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.faqsymbol {
+    font-size: 2vw;
+}
+
+/* Installations Menu CSS */
+
+#installations {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    overflow-y: visible;
+}
+
+.newinstallation {
+    width: -webkit-fill-available;
+    margin-top: 5vh;
+
+}
+
+#installations .classicbutton {
+    margin-left: 8vh;
+}
+
+.newinstallationdetails {
+    text-align: left;
+    width: 45vw;
+    margin: 3vh 0;
+    overflow-y: scroll;
+}
+
+.newinstallationicons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.newinstallationicons img {
+    border: 0.1vw solid transparent;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    cursor: pointer;
+    width: 4vw;
+    transition: 0.15s;
+    margin-bottom: 1vw;
+}
+
+.newinstallationicons img:hover {
+    border: 0.1vw solid var(--ui-main-lighter);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.newinstallationicons img.selected {
+    border: 0.1vw solid var(--ui-main-lighter);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.newinstallationheader {
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    padding: 1vw 0;
+}
+
+.newinstallationdetails input, .newinstallationdetails select {
+    font-size: 1.2vw;
+    margin: 0.2vw;
+    padding: 0.3vw 1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0.2vw solid var(--ui-main-lighter);
+    border-radius: 0.25vw;
+    width: -webkit-fill-available;
+}
+
+.newinstallationdetails option {
+    background-color: var(--ui-main-light);
+}
+
+.newinstallationfooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.newinstallationfooterbuttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin: 2vw;
+}
+
+#installationsbox {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 0 7vh;
+}
+
+.installationOptions {
+    display: flex;
+    height: 9vh;
+    width: 74vw;
+    align-items: center;
+    font-size: 1.2vw;
+    transition: 0.15s;
+    position: relative;
+}
+
+.installationOption {
+    position: relative;
+    left: 7vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.installationBox {
+    width: 3.5vh;
+    height: 3.5vh;
+    appearance: none;
+    border: 0.3vw solid #0c6e3d;
+    cursor: pointer;
+}
+
+.installationBox:checked {
+  background-color: var(--ui-select);
+}
+
+.installationBox:checked:hover {
+    background-color: #0f9a54;
+}
+
+.installationOption img {
+    width: 5.5vh;
+    height: 5.5vh;
+}
+
+.installationOptionText {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.editbuttons {
+    position: absolute;
+    right: 7vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.editbuttons .classicbutton {
+    margin-left: 0 !important;
+}
+
+
+/* Patch Notes Menu CSS */
+
+#patchNotes {
+    position: absolute;
+    display: none;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1.3vw;
+}
+
+.patchnotes-title {
+    font-size: 1.4vw;
+}
+
+.versionscontainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin: 0.5vh 0 1.5vh;
+}
+
+.versionBox {
+    width: 2.5vh;
+    height: 2.5vh;
+    appearance: none;
+    border: 0.3vw solid #0c6e3d;
+    cursor: pointer;
+}
+
+.versionBox:checked {
+    background-color: var(--ui-select);
+}
+
+#patchnotesbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw 1.5vw;
+    padding: 2vh;
+}
+
+.patchnote {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 16vw;
+    background-color: black;
+    transition: 0.15s;
+}
+
+.patchnote:hover {
+    background-color: var(--ui-main);
+}
+
+.patchnote img {
+    margin: 1vw;
+    image-rendering: pixelated;
+}
+
+.patchnotedetails {
+    border-top: 0.1vh solid var(--ui-main-light);
+    padding: 0.5vw 1vw 1vw;
+    height: -webkit-fill-available;
+    font-size: 1.2vw;
+}
+
+#externalmenu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background: var(--ui-main);
+    width: 100vw;
+    height: 100vh;
+    user-select: text;
+}
+
+.notescreenheader {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 1.5vw;
+}
+
+.notescreenheader svg {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+#externalmenu hr {
+    width: 100vw;
+}
+
+.notescreendetails {
+    text-align: left;
+    width: 75vw;
+    margin: 3vh 0;
+    overflow-y: scroll;
+}
+
+.notescreendetails .date {
+    color: var(--text-secondary);
+    font-size: 1.1vw;
+}
+
+.notescreendetails ul {
+    list-style: revert;
+    padding: revert;
+}
+
+/* Servers Menu CSS */
+
+#servers {
+    position: absolute;
+    display: none;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1.3vw;
+}
+
+.serverdiv-title {
+    font-size: 1.4vw;
+}
+
+.versionscontainerserver {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin: 0.5vh 0 1.5vh;
+}
+
+.versionBoxServer {
+    width: 2.5vh;
+    height: 2.5vh;
+    appearance: flex;
+    border: 0.3vw solid #0c6e3d;
+    cursor: pointer;
+}
+
+.versionBoxServer:checked {
+    background-color: var(--ui-select);
+}
+
+#serversbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw 1.5vw;
+    padding: 2vh;
+}
+
+.server {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 16vw;
+    background-color: black;
+    transition: 0.15s;
+}
+
+.server:hover {
+    background-color: var(--ui-main);
+}
+
+.server img {
+    margin: 1vw;
+    image-rendering: pixelated;
+}
+
+.serverdetails {
+    border-top: 0.1vh solid var(--ui-main-light);
+    padding: 0.5vw 1vw 1vw;
+    height: -webkit-fill-available;
+    font-size: 1.2vw;
+}
+
+#externalmenu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background: var(--ui-main);
+    width: 100vw;
+    height: 100vh;
+    user-select: text;
+}
+
+.serverscreenheader {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 1.5vw;
+}
+
+.serverscreenheader svg {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+#externalmenu hr {
+    width: 100vw;
+}
+
+.serverscreendetails {
+    text-align: left;
+    width: 75vw;
+    margin: 3vh 0;
+    overflow-y: scroll;
+}
+
+.serverscreendetails .date {
+    color: var(--text-secondary);
+    font-size: 1.1vw;
+}
+
+.serverscreendetails ul {
+    list-style: revert;
+    padding: revert;
+}
+
+.copyipbutton {
+    position: absolute;
+    right: 100;
+    transform: translateY(500px);
+    font-size: 30px;
+    border: 0.2vw solid var(--ui-main-light);
+    padding: 1vw 4.6vw;
+    cursor: pointer;
+    width: max-content;
+}
+
+.copyipbutton:hover {
+    border: 0.2vw solid var(--ui-main-lighter);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+/* Contributors Screen CSS */
+
+#contributors {
+    position: absolute;
+    display: none;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 2vw;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1.2vw;
+}
+
+.contributorstitle {
+    font-size: 2.3vw;
+    padding-top: 3vh;
+}
+
+.contributorsdiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contributortile {
+    display: flex;
+    gap: 1vw;
+    width: 56vh;
+    height: 28vh;
+    background-color: var(--ui-contributors);
+    border: 0.1vw solid var(--ui-contributors-secondary);
+    transition: 0.15s;
+}
+
+.contributortile:hover {
+    background-color: #332d14;
+    border: 0.1vw solid #ccb222;
+}
+
+.contributorside {
+    width: 26vh;
+    padding: 1.5vw;
+}
+
+.contributorside .contributoruser {
+    font-size: 1.5vw;
+}
+
+.contributorside .contributordescription {
+    color: var(--text-secondary);
+}
+
+#contributors img, #credits img {
+    width: 28vh;
+    padding: 1vw;
+    transition: 0.15s;
+}
+
+#contributors .contributortile:hover img, #credits .credittile:hover img {
+    filter: brightness(1.15);
+}
+
+/* Credits Screen CSS */
+
+#credits {
+    position: absolute;
+    display: none;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 2vw;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1.2vw;
+}
+
+.credittile {
+    display: flex;
+    gap: 1vw;
+    width: 56vh;
+    height: 28vh;
+    background-color: var(--ui-credits);
+    border: 0.1vw solid var(--ui-credits-secondary);
+    transition: 0.15s;
+}
+
+.credittile:hover {
+    background-color: #142331;
+    border: 0.1vw solid #1f68d6;
+}
+
+/* Settings Screen CSS */
+
+#settings {
+    position: absolute;
+    display: none;
+    width: 84vw;
+    height: 91vh;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--ui-main-dark);
+    overflow-y: scroll;
+    font-size: 1vw;
+    padding: 5vh 3vw 7vh;
+}
+
+#generalsettings {
+    display: block;
+}
+
+#generalsettings .settingstitle {
+    font-size: 1.1vw;
+    padding-top: 4vh;
+}
+
+.settingoption {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+#download {
+	position: absolute;
+	transform: translateX(300px);
+	top: 46.5px;
+}
+
+.settingoption p {
+    margin-top: 0.1vw;
+}
+
+.settingsbox {
+    width: 2vh;
+    height: 2vh;
+    appearance: none;
+    border: 0.1vw solid var(--ui-red);
+    cursor: pointer;
+}
+
+.settingsbox:hover {
+    background-color: var(--ui-main-light);
+}
+
+.settingsbox:checked {
+    background-color: #0c6e3d;
+    border-color: #00AA00;
+}
+
+.settingsbox:checked:hover {
+    background-color: #0c5c34;
+}
+
+#usernameinput {
+    margin: 0.5vw 0.2vw 0;
+    padding: 0.3vw 1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0.1vw solid var(--ui-main-light);
+    border-radius: 0.25vw;
+    width: -webkit-fill-available;
+}
+
+#stealthinput {
+    margin: 0.5vw 0.2vw 0;
+    padding: 0.3vw 1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0.1vw solid var(--ui-main-light);
+    border-radius: 0.25vw;
+    width: -webkit-fill-available;
+}
+
+.clearstoragebutton {
+    margin-top: 3vw;
+    background-color: #daa520;
+    padding: 0.5vw 2.5vw;
+    cursor: pointer;
+    width: max-content;
+    transition: 0.15s;
+    color: var(--ui-main-dark);
+}
+
+.clearstoragebutton:hover {
+    background-color: #ffbf00;
+}
+
+#aboutsettings {
+    display: none;
+}
+
+.whatsnewbutton {
+    position: absolute;
+    right: 0;
+    border: 0.1vw solid var(--ui-main-light);
+    padding: 0.3vw 2vw;
+    cursor: pointer;
+    width: max-content;
+}
+
+.whatsnewbutton:hover {
+    border: 0.1vw solid var(--ui-main-lighter);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#aboutsettings .settingstitle {
+    font-size: 1.1vw;
+    padding-top: 2vh;
+}
+
+#aboutsettings hr {
+    margin-top: 2vh;
+}
+
+.settingsdetails {
+    color: var(--text-secondary);
+    user-select: text;
+}
+
+/* Dropdown Menu CSS */
+
+.dropdownMenu {
+    position: absolute;
+    left: 1vw;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdownOptions {
+    position: absolute;
+    display: flex;
+    height: 5vw;
+    width: 27vw;
+    align-items: center;
+    background-color: var(--ui-main-dark);
+    z-index: 999;
+    font-size: 1.1vw;
+}
+
+.dropdownOptions:hover {
+    background-color: var(--ui-select);
+}
+
+.dropdownOption {
+    position: absolute;
+    left: 2vw;
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+.dropdownOption img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.dropdownOptionText {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.versionText {
+    margin-right: 4.25vw;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.1vw;
+}
+
+#gametitle {
+    width: max-content;
+}
+. p l a y B u t t o n   {   w i d t h :   1 0 v w ;   h e i g h t :   3 . 5 v w ;   b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   # 6 b 8 a f d   0 % ,   # 4 a 6 c f 7   1 0 0 % ) ;   b o r d e r - r a d i u s :   0 . 5 v w ;   b o r d e r :   n o n e ;   c u r s o r :   p o i n t e r ;   c o l o r :   w h i t e ;   f o n t - w e i g h t :   7 0 0 ;   f o n t - s i z e :   1 . 2 v w ;   b o x - s h a d o w :   0   4 p x   1 5 p x   r g b a ( 1 0 7 , 1 3 8 , 2 5 3 , 0 . 4 ) ;   t r a n s i t i o n :   a l l   0 . 2 s ;   }  
+ 

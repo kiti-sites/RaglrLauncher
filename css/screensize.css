@@ -1,0 +1,345 @@
+/* General CSS */
+hr {
+  width: 84vw;
+}
+
+/* Error CSS */
+#naerror {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-height: 400px) {
+  #screenerror {
+  display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #screenerror {
+  display: block;
+  }
+}
+
+/* Confirmation Menu CSS */
+
+#confirmationmenu {
+  font-size: 1.5vw;
+}
+
+.confrimationmenuscreen {
+  width: 50vw;
+}
+
+.confrimationmenuscreen.deleteinstallation {
+  width: 40vw;
+}
+
+#confirmationmenu svg {
+  top: 1.5vw;
+  right: 1.5vw;
+}
+
+.warningtitle {
+  font-size: 1.6vw;
+}
+
+/* Sidebar CSS */
+
+.sidebar {
+  width: 5.5vw;
+}
+
+.sidebarOptions {
+  height: 17.5vh;
+  margin-bottom: 1vh;
+  padding-left: 1.3vw;
+}
+
+.sidebarOptions.sidebarBottom {
+  height: 9vh;
+  margin-bottom: 0;
+}
+
+.gTabsText {
+  visibility: hidden;
+}
+
+#gtabs2 img, #gtabs3 img, #gtabs4 img {width: 2.8vw;}
+#gtabs7 img {width: 2.8vw}
+#gtabs5 {bottom: 14vh; width: 4.2vw;}
+#gtabs6 {bottom: 4vh; width: 4.2vw;}
+#gtabs5 img, #gtabs6 img {width: 2.2vw; padding-left: 0.4vw;}
+
+/* Header CSS */
+
+.mainPage {
+  width: 94.5vw;
+}
+
+.currentGame {
+  font-size: 1.4vw;
+}
+
+.gameHeader {
+  padding: 2vw 2.5vw 1vw;
+}
+
+.headerButtons {
+  font-size: 1.2vw;
+}
+
+.headerButtonSelected {
+  font-size: 1.2vw;
+}
+
+/* Body CSS */
+
+#game-bg {
+  width: 94.5vw;
+  height: 87vh;
+}
+
+#game-title {
+  margin-top: 28vh;
+}
+
+#gameSelection {
+  width: 94.5vw;
+}
+
+.dropdownSelector {
+  width: 25.5vw;
+  margin-left: 3vw;
+}
+
+.playButton {
+  width: 24.8vw;
+  height: 5.6vw;
+  left: 36%;
+}
+
+.username {
+  font-size: 1.5vw;
+}
+
+/* Mods Menu CSS */
+
+#mods {
+  width: 94.5vw;
+}
+
+.modoption {
+  width: 15vw;
+}
+
+.moddetails {
+  font-size: 1.2vw;
+}
+
+.modtitle {
+  font-size: 1.4vw;
+}
+
+/* FAQ Menu CSS */
+
+#faq {
+  width: 94.5vw;
+  font-size: 1.5vw;
+}
+
+/* Installations Menu CSS */
+
+#installations {
+  width: 94.5vw;
+}
+
+.newinstallation {
+  margin-top: 5vh;
+}
+
+.newinstallationdetails {
+  width: 65vw;
+  margin: 7vh 0;
+}
+
+.newinstallationicons {
+  gap: 1vw;
+}
+
+.newinstallationicons img {
+  width: 5.5vw;
+  margin-bottom: 1vw;
+}
+
+.newinstallationheader {
+  font-size: 1.5vw;
+  padding: 1.5vw 0;
+}
+
+.newinstallationdetails input, .newinstallationdetails select {
+  font-size: 1.4vw;
+}
+
+.installationOptions {
+  height: 9vh;
+  width: 84vw;
+  font-size: 1.4vw;
+}
+
+/* Patch Notes Menu CSS */
+
+#patchNotes {
+  width: 94.5vw;
+}
+
+.patchnotes-title {
+  font-size: 1.6vw;
+}
+
+.versionBox {
+  width: 2vw;
+  height: 2vw;
+}
+
+.patchnote {
+  width: 18vw;
+}
+
+.patchnotedetails {
+  font-size: 1.3vw;
+}
+
+.notescreenheader {
+  font-size: 1.8vw;
+}
+
+.notescreenheader svg {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.notescreendetails {
+  width: 85vw;
+}
+
+.notescreendetails .date {
+  font-size: 1.3vw;
+}
+
+/* Servers Menu CSS */
+
+#serversbox {
+  width: 94.5vw;
+}
+
+.serverdiv-title {
+  font-size: 1.6vw;
+}
+
+.versionBox {
+  width: 2vw;
+  height: 2vw;
+}
+
+.server {
+  width: 18vw;
+}
+
+.serverdetails {
+  font-size: 1.3vw;
+}
+
+.serverscreenheader {
+  font-size: 1.8vw;
+}
+
+.serverscreenheader svg {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.serverscreendetails {
+  width: 85vw;
+}
+
+.serverscreendetails .date {
+  font-size: 1.3vw;
+}
+
+/* Contributors Screen CSS */
+
+#contributors {
+  padding: 3vh 0;
+  gap: 2.5vw;
+  width: 94.5vw;
+  font-size: 1.4vw;
+}
+
+.contributorsdiv {
+  gap: 2.5vw;
+}
+
+.contributortile {
+  width: 50vh;
+}
+
+.contributorside {
+  width: 24vh;
+}
+
+.contributorside .contributoruser {
+  font-size: 1.6vw;
+}
+
+/* Credits Screen CSS */
+
+#credits {
+  padding: 3vh 0;
+  gap: 2vw;
+  width: 94.5vw;
+  font-size: 1.4vw;
+}
+
+.credittile {
+  width: 50vh;
+}
+
+/* Settings Screen CSS */
+
+#settings {
+  width: 94.5vw;
+  height: 91vh;
+  font-size: 1.4vw;
+  padding: 6vh 5vw 7vh;
+}
+
+#generalsettings .settingstitle {
+  font-size: 1.5vw;
+}
+
+.clearstoragebutton {
+  margin-top: 3vw;
+  padding: 0.5vw 2.5vw;
+  width: max-content;
+}
+
+#aboutsettings .settingstitle {
+  font-size: 1.5vw;
+}
+
+/* Dropdown Menu CSS */
+
+.launcherVersion {
+  font-size: 1.1vw;
+}
+
+.dropdownOptions {
+  font-size: 1.4vw;
+  width: 25.5vw;
+  margin-left: 3vw;
+}
+
+.versionText {
+  font-size: 1.4vw;
+}

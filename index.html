@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raglr Launcher</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="logo">Raglr Launcher</div>
+  <div class="version">v1.5.31</div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <nav>
+      <a href="#" onclick="showSection('home'); return false;" class="nav-item active" data-section="home">Início</a>
+      <a href="#" onclick="showSection('instances'); return false;" class="nav-item" data-section="instances">Instâncias</a>
+
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section id="section-home" class="content-section active">
+      <h1>Início</h1>
+      <p>Selecione uma instância para começar.</p>
+      <div class="card">
+        <h2>Latest release WASM</h2>
+        <p>26.3-wasm</p>
+        <button onclick="openmc()" class="btn">Iniciar</button>
+      </div>
+    </section>
+
+    <section id="section-instances" class="content-section" hidden>
+      <h1>Instâncias</h1>
+      <p>Versões disponíveis.</p>
+      <div id="installationsbox" class="list"></div>
+    </section>
+
+    <!-- Configurações removidas -->
+  </main>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

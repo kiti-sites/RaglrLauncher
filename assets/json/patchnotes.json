@@ -1,0 +1,200 @@
+[  
+	{
+        "title": "Hotfix: New versions",
+        "version": "v1.5.31",
+        "description": "Added 3 new versions of Eaglercraft",
+        "date": "Septemper 24th, 2026",
+        "icon": "/mc-icons/sulfur_cube.webp",
+        "type": "hotfix",
+        "notes": [
+            "Added the 26.2, 1.20.6 and 1.14.4 ports of Eaglercraft to the launcher",
+            "Added a new type of patch note: hotfix (which this is one of!)",
+            "Updated the background",
+            "Removed herobrine"
+        ]
+  }, 
+	{
+        "title": "Site update: New domain",
+        "version": "v1.5.3",
+        "description": "Moved the whole project to a new domain and added a servers screen",
+        "date": "May 17th, 2026",
+        "icon": "sidebar/i-servers.png",
+        "type": "site",
+        "notes": [
+            "Moved the whole repository to EaglerLauncher.github.io",
+            "Added a servers screen, where you can browse servers and copy their ip's",
+            "Made the skin editor its own tab instead of a seperate url",
+            "Removed herobrine"
+        ]
+    },   
+	{
+        "title": "Site update: More versions",
+        "version": "v1.5.2",
+        "description": "Added way more clients and some new modpacks to the launcher!",
+        "date": "May 16th, 2026",
+        "icon": "mc-icons/command-block.png",
+        "type": "site",
+        "notes": [
+            "Added 4 versions of Pixel Client",
+            "Added the WASM versions of some clients",
+            "Updated some clients",
+            "Added 7 new modpacks and their WASM versions",
+            "Removed herobrine"
+        ]
+   },
+   {
+        "title": "Eaglercraft 26.2",
+        "version": "26.2-0.1-dev",
+        "description": "The 26.2 port of Eaglercraft is created by o_xer",
+        "date": "may 14th, 2026",
+        "icon": "/icons/eaglercraft.png",
+        "type": "game",
+        "notes": []
+   }, 
+   {
+        "title": "Site update: Customizable",
+        "version": "v1.5.1",
+        "description": "Added customizable launcher options, credits, settings, more memory options, and updated code! (made by irv77)",
+        "date": "May 14th, 2026",
+        "icon": "sidebar/m-settings.png",
+        "type": "site",
+        "notes": [
+            "Added customizable launcher options, allowing users to create their own name and icon.",
+            "Added credits screen, displaying everybody who has contributed.",
+            "Added the settings screen, allowing users to customize the launcher, and learn info.",
+            "Implemented more memory on choices made inside of the launcher.",
+            "Updated games, fixed bugs, modified css.",
+            "Removed herobrine"
+        ]
+    },
+        {
+        "title": "App update: Offline app!",
+        "version": "v1.5.0",
+        "description": "Made the app for EaglerLauncher work offline",
+        "date": "May 14th, 2026",
+        "icon": "App_Offline.png",
+        "type": "site",
+        "notes": [
+            "Made the app for EaglerLauncher work offline (except some clients that use iframe, those still need wi-fi)",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "App update: executable support!",
+        "version": "v1.4.3",
+        "description": "Made executable apps for Linux, MacOS and Windows",
+        "date": "January 8th, 2026",
+        "icon": "App.png",
+        "type": "site",
+        "notes": [
+            "Made executable apps for Linux, MacOS and Windows",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "Site Update: Eagler Optimizations",
+        "version": "v1.4.2",
+        "description": "Added skin editor, new clients and optimized eagler launcher",
+        "date": "January 1st, 2026",
+        "icon": "logo.png",
+        "type": "site",
+        "notes": [
+            "Added TheCreationKing's skin editor",
+            "Added Kone client",
+            "Added EaglyMC",
+            "Made some small optimizations",
+            "Changed the logo",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "Site Update: Eagler Launcher",
+        "version": "v1.4.1",
+        "description": "Added credits, removed unused features and unstable versions and updated some code",
+        "date": "October 10th, 2025",
+        "icon": "logo_creeper.png",
+        "type": "site",
+        "notes": [
+            "Removed Flamedogo's mobile ui because it did not work",
+            "Added credits",
+            "Removed unused features",
+            "Cleared up some code",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "Site Update: Modded",
+        "version": "v1.4.0",
+        "description": "Added patch notes, bug fixes, and integrated mods!",
+        "date": "August 5th, 2025",
+        "icon": "mod-icons/grappling-gun.png",
+        "type": "site",
+        "notes": [
+            "Added the mod screen, which allows users to select mods, and it'll be added to their eaglerforge launcher. Will override mods added in by user inside of launcher.",
+            "Added the news screen, it displays recent updates to the website, and launcher builds.",
+            "Fixed a bug of unable to scroll with to many launchers selected.",
+            "Fixed sizing bugs of website.",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "Site Update: Memorized",
+        "version": "v1.3.1",
+        "description": "Organized/updated code, added memory options, more games and installations!",
+        "date": "Monday, May 28th, 2025",
+        "icon": "mc-icons/red-bed.png",
+        "type": "site",
+        "notes": [
+            "Implemented memory for options selected inside of launcher.",
+            "Added wider range of game versions.",
+            "Removed bulk code for sleeker function/look.",
+            "Organize structure of project for future growth.",
+            "Removed herobrine"
+        ]
+    },
+    {
+        "title": "Eaglercraft 1.12",
+        "version": "u2",
+        "description": "Eaglercraft 1.12 is released by PeytonPlayz585",
+        "date": "March 10 2025",
+        "icon": "icons/eaglercraft.png",
+        "type": "game",
+        "notes": []
+    },
+    {
+        "title": "Eaglercraft 1.8.8",
+        "version": "u51",
+        "description": "Eaglercraft 1.8.8 is released by lax1dude and aayunami2000",
+        "date": "December 2022",
+        "icon": "icons/eaglercraft.png",
+        "type": "game",
+        "notes": []
+    },
+    {
+        "title": "Site Update: W.A.S.M.",
+        "version": "v1.2.0",
+        "description": "added the WebAssembly GC editions of eaglercraft",
+        "date": "Tuesday, April 1st, 2025",
+        "icon": "mc-icons/grass-wasm.png",
+        "type": "site",
+        "notes": []
+    },
+    {
+        "title": "Site Update: CYA CSS",
+        "version": "v1.1.0",
+        "description": "Come back soon for full log!",
+        "date": "Wednesday, November 13th, 2024",
+        "icon": "mc-icons/skull.png",
+        "type": "site",
+        "notes": []
+    },
+    {
+        "title": "Ampler Launcher Release",
+        "version": "v1.0.0",
+        "description": "this was when the orignal ampler launcher was released. eagler launcher is a fork of ampler launcher.",
+        "date": "Saturday, July 17th, 2024",
+        "icon": "logo_old.png",
+        "type": "site",
+        "notes": []
+    }
+]

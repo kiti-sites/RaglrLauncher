@@ -1,0 +1,62 @@
+[
+{
+"title": "Voidsent MC",
+"version": "1.8.8 & 1.12.2",
+"description": "A PvP server with lots of fun gamemodes!",
+"ip": "wss://mc.voidsent.net",
+"icon": "server-icons/voidsent.png",
+"type": "other",
+"notes": [
+"Practice mode for PvP",
+"Spear and Mace PvP",
+"Survival with custom items, dundgeons, bosses and more",
+"Vanilla survival",
+"The pit"
+]
+},
+{
+"title": "KypticMC",
+"version": "1.8.8 & 1.12.2",
+"description": "A PvP minigame server with advanced anticheat",
+"ip": "wss://krypticmc.net",
+"icon": "server-icons/krypticmc.png",
+"type": "other",
+"notes": [
+"Anti-Cheat against hackers",
+"No Pay-To-Win",
+"KitPvP and PvP Practice",
+"Bedwars & Skywars",
+"Lifesteal, Hardcore and Survival"
+]
+},
+{
+"title": "ArchMC",
+"version": "1.8.8 & 1.12.2",
+"description": "The most popular server for Eaglercraft",
+"ip": "wss://MC.arch.lol",
+"icon": "server-icons/archmc.png",
+"type": "other",
+"notes": [
+"~400 player always online",
+"Bedwars",
+"Duels and KitPvP",
+"Survival and Lifesteal",
+"Creative"
+]
+},
+{
+"title": "Pixel Craft",
+"version": "1.5.2, 1.8.8 & 1.12.2",
+"description": "Cross-platform minigames",
+"ip": "wss://pcsmp.net",
+"icon": "server-icons/pixelcraft.png",
+"type": "other",
+"notes": [
+"Cross platform with Java and Bedrock",
+"Survival, Anarchy and Lifesteal",
+"PvP Practice",
+"GenPvP",
+"Creative"
+]
+}
+]

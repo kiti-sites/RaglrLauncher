@@ -1,0 +1,220 @@
+[
+    {
+       "title": "Eaglerforge",
+       "version": "1.8.8-v1.3.2",
+       "icon": "./assets/images/icons/eaglerforge.png",
+       "link": "./mc/eaglerforge/",
+       "active": true
+    },
+    {
+       "title": "Astra Client",
+       "version": "1.8.8-v1.6",
+       "icon": "./assets/images/icons/astra-client.png",
+       "link": "./mc/astraclient/",
+       "active": false
+    },
+    {
+       "title": "Astra Client WASM",
+       "version": "1.8.8-v1.6-wasm",
+       "icon": "./assets/images/icons/astra-client-wasm.png",
+       "link": "./mc/astraclient-wasm/",
+       "active": false
+    },
+    {
+       "title": "Kone Client",
+       "version": "1.8.8",
+       "icon": "./assets/images/icons/kone.png",
+       "link": "./mc/koneclient",
+       "active": false
+    },
+    {
+       "title": "EaglyMC",
+       "version": "1.20-u7",
+       "icon": "./assets/images/icons/eaglymc.png",
+       "link": "./mc/EaglyMC",
+       "active": false
+    },
+    {
+       "title": "Eclipse Client",
+       "version": "1.19-1.0.8-wasm",
+       "icon": "./assets/images/icons/norshare.png",
+       "link": "./mc/eclipse/",
+       "active": true
+    },
+    {
+       "title": "Resent Client",
+       "version": "1.8.8-v5.1",
+       "icon": "./assets/images/icons/resent-client.png",
+       "link": "./mc/resentclient/",
+       "active": false
+    },
+    {
+       "title": "Resent Client WASM",
+       "version": "1.8.8-v5.0-wasm",
+       "icon": "./assets/images/icons/resent-client-wasm.png",
+       "link": "./mc/resentclient-wasm/",
+       "active": false
+    },
+    {
+       "title": "Shadow Client",
+       "version": "1.8.8-v4.5-u34",
+       "icon": "./assets/images/mc-icons/skull.png",
+       "link": "./mc/shadowclient/",
+       "active": false
+    },
+    {
+       "title": "Starlike Client",
+       "version": "1.8.8-v0.4.2",
+       "icon": "./assets/images/icons/starlike.png",
+       "link": "./mc/starlikeclient/",
+       "active": false
+    },
+    {
+       "title": "Pixel Client",
+       "version": "1.8.8-v3.0.0",
+       "icon": "./assets/images/icons/pixelclient.png",
+       "link": "./mc/pixelclient-1.8.8/",
+       "active": false
+    },
+    {
+       "title": "Pixel Client WASM",
+       "version": "1.8.8-v3.0.0-wasm",
+       "icon": "./assets/images/icons/pixelclient-wasm.png",
+       "link": "./mc/pixelclient-1.8.8-wasm/",
+       "active": false
+    },
+    {
+       "title": "Pixel Client",
+       "version": "1.12.2-v3.0.0",
+       "icon": "./assets/images/icons/pixelclient.png",
+       "link": "./mc/pixelclient-1.12.2/",
+       "active": false
+    },
+    {
+       "title": "Pixel Client WASM",
+       "version": "1.12.2-v3.0.0-wasm",
+       "icon": "./assets/images/icons/pixelclient-wasm.png",
+       "link": "./mc/pixelclient-1.12.2-wasm/",
+       "active": false
+    },
+    {
+       "title": "Tuff Client",
+       "version": "1.12.2-v1.1UT15",
+       "icon": "./assets/images/mc-icons/tuff.png",
+       "link": "./mc/tuffclient/",
+       "active": false
+    },
+    {
+       "title": "Tuff Client WASM",
+       "version": "1.12.2-v1.1UT15-WASM",
+       "icon": "./assets/images/mc-icons/tuff-wasm.png",
+       "link": "./mc/tuffclient-wasm/",
+       "active": false
+    },
+    {
+       "title": "DragonXLite",
+       "version": "1.8.8",
+       "icon": "./assets/images/mc-icons/dragon-head.png",
+       "link": "./mc/dragonxlite/",
+       "active": false
+    },
+    {
+       "title": "Explore Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/explore",
+       "active": false
+    },
+    {
+       "title": "Explore Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/explore-wasm",
+       "active": false
+    },
+    {
+       "title": "Ultimate Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/ultimate",
+       "active": false
+    },
+    {
+       "title": "Ultimate Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/ultimate-wasm",
+       "active": false
+    },
+    {
+       "title": "Lite Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/lite",
+       "active": false
+    },
+    {
+       "title": "Lite Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/lite-wasm",
+       "active": false
+    },
+    {
+       "title": "Magic Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/magic",
+       "active": false
+    },
+    {
+       "title": "Magic Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/magic-wasm",
+       "active": false
+    },
+    {
+       "title": "Sky Factory Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/skyfactory",
+       "active": false
+    },
+    {
+       "title": "Sky Factory Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/skyfactory-wasm",
+       "active": false
+    },
+    {
+       "title": "Tech Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/tech",
+       "active": false
+    },
+    {
+       "title": "Tech Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/tech-wasm",
+       "active": false
+    },
+    {
+       "title": "Vanilla+ Modpack",
+       "version": "1.6.4",
+       "icon": "./assets/images/mc-icons/command-block.png",
+       "link": "./mc/modpacks/vanilla",
+       "active": false
+    },
+    {
+       "title": "Vanilla+ Modpack WASM",
+       "version": "1.6.4-WASM",
+       "icon": "./assets/images/mc-icons/command-block-wasm.png",
+       "link": "./mc/modpacks/vanilla-wasm",
+       "active": false
+    }
+ ]
+
